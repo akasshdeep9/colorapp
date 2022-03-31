@@ -16,7 +16,7 @@ variable "tfc_organization" {
 #______________________________________________
 
 variable "tfc_workspace" {
-  default     = ""
+  default     = "kubeconfig"
   description = "Terraform Cloud Workspace Name."
   type        = string
 }

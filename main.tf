@@ -68,11 +68,11 @@ resource "kubernetes_deployment" "color" {
                     }//port          
                     
                     resources {
-                        limits {
+                        limits={
                             cpu    = "0.5"
                             memory = "512Mi"
                         } //limits
-                        requests {
+                        requests={
                             cpu    = "250m"
                             memory = "50Mi"
                         } //requests

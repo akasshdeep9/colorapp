@@ -15,7 +15,7 @@ terraform {
 
 provider "kubectl" {
   # Configuration options
-  load_config_file       = "false"
+  load_config_file       = "./new_cluster-kubeconfig.yml"
   host                   = local.kubeconfig.clusters[0].cluster.server
   client_certificate     = base64decode(local.kubeconfig.users[0].user.client-certificate-data)
   client_key             = base64decode(local.kubeconfig.users[0].user.client-key-data)
